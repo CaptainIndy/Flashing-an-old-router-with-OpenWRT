@@ -7,9 +7,7 @@ Disclaimer: by using OpenWrt on an router voids any existing warranty on the rou
 
 **Step 1: Router Comptability**
 
-Before you even want to start to wondering if you could upgrade your router, first go to OpenWrt's table of compatible devices and see if the router you want to upgrade is there. If it isn't, I would recommend choosing a device that has documentation on the device page.  It will make your life easier especially if you’re new to this. I am using a Netgear R6080.
-
-Once you find the device, hover over the column labeled “device page” and click on in this case “R6080”.
+Before you even want to start to wondering if you could upgrade your router, first go to OpenWrt's table of compatible devices and see if the router you want to upgrade is there. If it isn't, I would recommend choosing a device that has documentation on the device page.  It will make your life easier especially if you’re new to this. I am using a Netgear R6080. Once you find the device, hover over the column labeled “device page” and click on in this case “R6080”.
 https://openwrt.org/toh/start
 
 <img width="1139" alt="Screenshot 2023-12-28 at 4 34 56 PM" src="https://github.com/CaptainIndy/Flashing-an-old-router-with-OpenWRT/assets/142528700/9c485477-16c3-458a-afc9-016c5ad67605">
