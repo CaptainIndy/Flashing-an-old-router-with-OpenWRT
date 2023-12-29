@@ -32,9 +32,9 @@ We are going to scroll down to the "Readme" section and look at the second parag
     - If you already have homebrew installed on your system, simply run the following command in your terminal: “brew            install nmrpflash”
     
 **Option 2 Without Homebrew**
-    - If you do not want to use homebrew, simply click on the installation link.
-    - https://github.com/jclehner/nmrpflash/releases. 
-      - Click on the download file for your corresponding system. When it downloads, unzip the nmrp file, move to the              directory in your terminal and run the command “nrmp”, and it should begin the download.
-      - You can check if it is installed by typing in “nmrp” and hitting enter and you should see options for nmrp                 command usages. 
+- If you do not want to use homebrew, simply click on the installation link.
+  - https://github.com/jclehner/nmrpflash/releases. 
+  - Click on the download file for your corresponding system. When it downloads, unzip the nmrp file, move to the              directory in your terminal and run the command “nrmp”, and it should begin the download.
+    - You can check if it is installed by typing in “nmrp” and hitting enter and you should see options for nmrp                 command usages. 
   
 
