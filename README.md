@@ -16,11 +16,21 @@ https://openwrt.org/toh/start
 **Step 2: Necessary Downloads**
 
 This device page will show you the instructions on how to perform the firmware flash. 
+
+ <img width="970" alt="Screenshot 2023-12-28 at 4 47 42 PM" src="https://github.com/CaptainIndy/Flashing-an-old-router-with-OpenWRT/assets/142528700/940bbacf-bc61-49eb-8545-b5c3ee7bcf8c">
+
 Things we will need:
 - NMRP Flash tool: A software used to send commands of packets to the router to tell it what firmware to use on boot or on start. This is what we are going to use to send the actual firmware file to our router when we start it up.
 
 - Firmware snapshot: This will be under the installation table. The link is under the column titled “Firmware OpenWrt Install”. Download both the squash factory image and also the sysupgrade.bin in the column titled "Firmware OpenWrt Upgrade". Make sure to place both of these files in the same folder on your computer where you will remember the file path.
-  <img width="970" alt="Screenshot 2023-12-28 at 4 47 42 PM" src="https://github.com/CaptainIndy/Flashing-an-old-router-with-OpenWRT/assets/142528700/940bbacf-bc61-49eb-8545-b5c3ee7bcf8c">
+
+- OEM (Original Equipment Manufacturing) Firmware: In case you do not like the OpenWrt upgade and you want to rever back to the original version. The link for this download is in the third column in the installation table labeled "Firmware OEM Stock"
+  - https://www.netgear.com/support/product/r6080
+  - After clicking on that link, scroll down to "Firmware and Software Downloads" and click the arrow
+  - Under "Current Versions", you will see a clickable labeled "Firmware version"... followed by the latest version, in 
+    this case it is "1.0.0.54"
+  - Click the arrow and hit the Download button. Make sure for consistency that this download is in the same file as the       firmware snapshots downloaded earlier.
+ 
 
 **NMRP Flash**
 
