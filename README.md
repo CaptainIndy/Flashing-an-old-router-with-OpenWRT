@@ -1,5 +1,6 @@
 # Flashing-an-old-router-with-OpenWRT
 **Overview**
+
 OpenWrt is an open source software firmware. Flashing your router allows for enhanced security and additional upgrades from the Openwrt community.
 Disclaimer: by using OpenWrt on an router voids any existing warranty on the router itself. There is also a risk of bricking the router and it becoming unusable. 
 
