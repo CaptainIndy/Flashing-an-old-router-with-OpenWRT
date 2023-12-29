@@ -49,6 +49,19 @@ We are going to scroll down to the "Readme" section and look at the second parag
 
 **Step 3: Flashing Preparation**
 
+Before we flash our router, let's make sure everything is set up properly. When plugging in your router, you will need two ethernet cables. 
+
+First, plug the router that you're upgrading into an outlet. Then take one of your ethernet cables and plug one end into the blue port labeled "internet". This is your WAN port. Connect the other end to any empty port (a LAN port) of a router that's already connected to the internet. 
+
+Next, take your other ethernet cord and connect one end to any one of the open LAN ports labeled "1, 2, 3, 4" on the router you're upgrading. Take the other end of the cord and connect it to your computer. You will most likely need an Etherent cord adapter for your computer which you can buy off Amazon for $20.
+
+Proceed by turn on your router to be upgraded by clicking the power button directly on your device. You should slowly start to see 4 green lights pop up. 
+
+In your terminal, move to the folder in your downloads where you have the NMRP Flash firmware installed. From this point forward, if you installed through Homebrew, you do not need "./" when running the following commands. But if you did not then you will need it before running "nmrpflash"
+
+From this folder in your terminal, run the command "nmrpflash -L" to determine which network interface is working with your netgear router.
+-For me, I will be choosing "en7" 
+
 **Step 4: Commence Flashing**
 
 **Step 5: Logging in**
