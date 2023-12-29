@@ -59,10 +59,25 @@ Proceed by turn on your router to be upgraded by clicking the power button direc
 
 In your terminal, move to the folder in your downloads where you have the NMRP Flash firmware installed. From this point forward, if you installed through Homebrew, you do not need "./" when running the following commands. But if you did not then you will need it before running "nmrpflash"
 
-From this folder in your terminal, run the command "nmrpflash -L" to determine which network interface is working with your netgear router.
--For me, I will be choosing "en7" 
+From this folder in your terminal, run the command "nmrpflash -L" to determine which network interface is working with your Netgear router.
+- For me, I will be choosing "en7" since that is the listed interface in the USB
+- If it is not working, google the IP that is assigned to you using nmrpflash -L or ifconfig. Once you google the IP, login to your router with your information and then it is time to flash the router. 
 
 **Step 4: Commence Flashing**
+Before flashing, please read the instructions from this section in full. 
+
+First power your router off manually by hitting the power button on your device. Then from the terminal, navigate to where your OpenWrt install firmware is located. Make sure that the Downloads are in there. We are looking for a squash img. Also have your network interface handy. 
+- Firmware: openwrt-23.05.0-ramips-mt76x8-netgear_r6080-squashfs-factory.img
+- Network interface: en7
+
+Run the following command with required information (sudo privileges required):
+- sudo nmrpflash -i en7 -f openwrt-23.05.0-ramips-mt76x8-netgear_r6080-squashfs-factory.img
+- When you hit enter, the terminal will reply with "Waiting for Ethernet Connection...", and in return you will quickly turn your router back on manually on your device.
+- 
+
+<img width="703" alt="Screenshot 2023-12-28 at 6 24 23 PM" src="https://github.com/CaptainIndy/Flashing-an-old-router-with-OpenWRT/assets/142528700/ad05940d-4c56-4389-bf10-822b83b25c25">
+
+
 
 **Step 5: Logging in**
 
