@@ -24,11 +24,13 @@ Things we will need:
 
 **NMRP Flash**
 
-When we click on the NMRP Flash link, https://github.com/jclehner/nmrpflash. It will take us to the github page and on this is where we are going to be looking for binaries. This will be different for windows and mac/linux os. In my case I am using a mac. 
+When we click on the NMRP Flash link, https://github.com/jclehner/nmrpflash. It will take us to the github page, where we will be looking for the binaries. This will be different for windows and mac/linux os. In my case I am using a mac. 
 
 We are going to scroll down to the "Readme" section and look at the second paragraph where it starts with “Prebuilt binaries”. There are two ways to do this: with or without Homebrew. I am going to be using Homebrew to do this. 
+
   **Option 1: With Homebrew**
     - If you already have homebrew installed on your system, simply run the following command in your terminal: “brew            install nmrpflash”
+    
   **Option 2 Without Homebrew**
     - If you do not want to use homebrew, simply click on the installation link.
     - https://github.com/jclehner/nmrpflash/releases. 
