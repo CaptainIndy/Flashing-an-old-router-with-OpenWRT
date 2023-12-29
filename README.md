@@ -73,7 +73,6 @@ First power your router off manually by hitting the power button on your device.
 Run the following command with required information (sudo privileges required):
 - sudo nmrpflash -i en7 -f openwrt-23.05.0-ramips-mt76x8-netgear_r6080-squashfs-factory.img
 - When you hit enter, the terminal will reply with "Waiting for Ethernet Connection...", and in return you will quickly turn your router back on manually on your device.
-- 
 
 <img width="703" alt="Screenshot 2023-12-28 at 6 24 23 PM" src="https://github.com/CaptainIndy/Flashing-an-old-router-with-OpenWRT/assets/142528700/ad05940d-4c56-4389-bf10-822b83b25c25">
 
