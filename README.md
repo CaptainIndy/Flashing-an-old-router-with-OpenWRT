@@ -1,8 +1,10 @@
 # Flashing-an-old-router-with-OpenWRT
+**Overview**
 OpenWrt is an open source software firmware. Flashing your router allows for enhanced security and additional upgrades from the Openwrt community.
 Disclaimer: by using OpenWrt on an router voids any existing warranty on the router itself. There is also a risk of bricking the router and it becoming unusable. 
 
 Step 1: Router Comptability:
+
   Before you even want to start to wondering if you could upgrade your router, first go to OpenWrt's table of compatible devices and see if the router you want to upgrade is there. If it isn't, I would recommend choosing a device that has documentation on the device page.  It will make your life easier especially if you’re new to this. I am using a Netgear R6080.
 Once you find the device, hover over the column labeled “device page” and click on in this case “R6080”.
     https://openwrt.org/toh/start
