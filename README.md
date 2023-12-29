@@ -48,9 +48,13 @@ We are going to scroll down to the "Readme" section and look at the second parag
     - You can check if it is installed by typing in “nmrp” and hitting enter and you should see options for nmrp                 command usages.
 
 **Step 3: Flashing Preparation**
+
 **Step 4: Commence Flashing**
+
 **Step 5: Logging in**
+
 **Step 6: Checking it works**
+
 **Step 7: Issues I ran into**
   
 
