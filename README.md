@@ -29,7 +29,7 @@ Things we will need:
   - After clicking on that link, scroll down to "Firmware and Software Downloads" and click the arrow
   - Under "Current Versions", you will see a clickable labeled "Firmware version"... followed by the latest version, in 
     this case it is "1.0.0.54"
-  - Click the arrow and hit the Download button. Make sure for consistency that this download is in the same file as the       firmware snapshots downloaded earlier.
+  - Click the arrow and hit the Download button. Make sure for consistency that this download is in the same file as the firmware snapshots downloaded earlier.
  
 
 **NMRP Flash**
@@ -39,13 +39,13 @@ When we click on the NMRP Flash link, https://github.com/jclehner/nmrpflash. It 
 We are going to scroll down to the "Readme" section and look at the second paragraph where it starts with “Prebuilt binaries”. There are two ways to do this: with or without Homebrew. I am going to be using Homebrew to do this. 
 
 **Option 1: With Homebrew**
-    - If you already have homebrew installed on your system, simply run the following command in your terminal: “brew            install nmrpflash”
+    - If you already have homebrew installed on your system, simply run the following command in your terminal: “brew install nmrpflash”
     
 **Option 2 Without Homebrew**
 - If you do not want to use homebrew, simply click on the installation link.
   - https://github.com/jclehner/nmrpflash/releases. 
-  - Click on the download file for your corresponding system. When it downloads, unzip the nmrp file, move to the              directory in your terminal and run the command “nrmp”, and it should begin the download.
-    - You can check if it is installed by typing in “nmrp” and hitting enter and you should see options for nmrp                 command usages.
+  - Click on the download file for your corresponding system. When it downloads, unzip the nmrp file, move to the directory in your terminal and run the command “nrmp”, and it should begin the download.
+    - You can check if it is installed by typing in “nmrp” and hitting enter and you should see options for nmrp command usages.
 
 **Step 3: Flashing Preparation**
 
