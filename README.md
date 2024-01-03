@@ -61,7 +61,6 @@ In your terminal, move to the folder in your downloads where you have the NMRP F
 
 From this folder in your terminal, run the command "nmrpflash -L" to determine which network interface is working with your Netgear router.
 - For me, I will be choosing "en7" since that is the listed interface in the USB
-- If it is not working, google the IP that is assigned to you using nmrpflash -L or ifconfig. Once you google the IP, login to your router with your information and then it is time to flash the router. 
 
 **Step 4: Commence Flashing**
 Before flashing, please read the instructions from this section in full. 
@@ -79,12 +78,30 @@ Run the following command with required information (sudo privileges required):
 
 
 
-**Step 5: Logging in**
+**Step 5: Logging in/Checking that it works**
 
-Once the router has rebooted, we are going to want to find our newly assigned IP. I use the command: "route -n get default" to get the gateway address. Once you have the address, put it into your web browser and it should give you a login to go into Luci.  Before we go into 
+Once the router has rebooted, we are going to want to find our newly assigned IP. I use the command: "route -n get default" to get the gateway address. Once you have the address, put it into your web browser and it should give you a login to go into Luci. 
 
-**Step 6: Checking it works**
+You can also double check that is working from your terminal. Go ahead and ssh roo@"yourIP". This is the same one from your "route -n get default command". We will be running our last command from here.
+
+**Step 6: Last Step**
+
+Before completing the final steps, we need to run "opkg update" from our terminal while logged in as root in OpenWrt. Once everything has run, go back to the Luci interface in your browser. 
+
+Go to System -> Backup/Firmware Flash -> Click on Flash Image at the bottom --> browse, and find that "sys upgrade" package -> click upload and keep the settings as is.
 
 **Step 7: Issues I ran into**
+
+There is a chance that your home network configuration is on the .1 range and that OpenWrt's default sets its router to the .1 range as well. This would cause a conflict but can be changed. 
+
+Here are the steps you can take to change this:
+1. use command: "route -n get default" in terminal to get default gateway address.
+2. Paste the IP address into your browser search and hit enter.
+3. There is no password (can be changed later) so just hit enter for log in.
+4. Go to Network -> Interfaces -> Edit (under lan, it is green for me)
+5. For IPV4 Address, for the third number, change the 1 to a 2.
+6. Click save and apply. Then click save and keep settings.
+7. Reboot Device.
+8. Once device is rebooted, you should be able to run the "route -n get default" command in you terminal and see that your default address has been updated successfully. 
   
 
