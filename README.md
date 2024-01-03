@@ -80,15 +80,15 @@ Run the following command with required information (sudo privileges required):
 
 **Step 5: Logging in/Checking that it works**
 
-Once the router has rebooted, we are going to want to find our newly assigned IP. I use the command: "route -n get default" to get the gateway address. Once you have the address, put it into your web browser and it should give you a login to go into Luci. 
+Once the router has rebooted, we are going to want to find our newly assigned IP. I used the command: "route -n get default" to get the gateway address. Once you have the address, put it into your web browser and it should give you a login to go into Luci. Luci is the main web administration utility for OpenWrt. Also remember that there is no password for Luci unless you set one yourself. 
 
-You can also double check that is working from your terminal. Go ahead and ssh roo@"yourIP". This is the same one from your "route -n get default command". We will be running our last command from here.
+You can also double check that is working from your terminal. Go ahead and ssh root@"yourIP". This is the same one from your "route -n get default command". We will be running our last command from root in our OpenWrt terminal.
 
 **Step 6: Last Step**
 
 Before completing the final steps, we need to run "opkg update" from our terminal while logged in as root in OpenWrt. Once everything has run, go back to the Luci interface in your browser. 
 
-Go to System -> Backup/Firmware Flash -> Click on Flash Image at the bottom --> browse, and find that "sys upgrade" package -> click upload and keep the settings as is.
+Go to System -> Backup/Firmware Flash -> Click on Flash Image at the bottom -> browse, and find that "sys upgrade" package -> click upload and keep the settings as is.
 
 **Step 7: Issues I ran into**
 
@@ -102,6 +102,20 @@ Here are the steps you can take to change this:
 5. For IPV4 Address, for the third number, change the 1 to a 2.
 6. Click save and apply. Then click save and keep settings.
 7. Reboot Device.
-8. Once device is rebooted, you should be able to run the "route -n get default" command in you terminal and see that your default address has been updated successfully. 
-  
+8. Once device is rebooted, you should be able to run the "route -n get default" command in you terminal and see that your default address has been updated successfully.
+
+**Further Projects to do with OpenWrt if your router has space (mine does not)**
+
+Ideas taken from: https://www.seeedstudio.com/blog/2021/01/22/openwrt-for-routers/
+"Blocking advertisements directly on the router
+Encrypting your internet connection for greater privacy
+Setting quotas on download volume or bandwidth
+Creating a guest network to to allow access to internet but not local devices
+Establishing the router as a central for home automation
+Real time network monitoring
+Create Dynamic DNS
+Set Up a VPN client or server
+Run a BitTorrent client from the router"
+
+Also if you do not have the space, you can also complete your own OpenWrt Image Build that has custom packages to suit your purposes. 
 
