@@ -81,7 +81,8 @@ Run the following command with required information (sudo privileges required):
 
 **Step 5: Logging in**
 
-Once you have logged int
+Once the router has rebooted, we are going to want to find our newly assigned IP. I use the command: "route -n get default" to get the gateway address. Once you have the address, put it into your web browser and it should give you a login to go into Luci.  Before we go into 
+
 **Step 6: Checking it works**
 
 **Step 7: Issues I ran into**
